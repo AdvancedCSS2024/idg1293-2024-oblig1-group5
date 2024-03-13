@@ -1,17 +1,22 @@
 body {
   background-color: #F6F8FB;
+  margin: 100px auto;
 }
 
 .login-page {
   display: flex;
   flex-wrap: wrap;
+  justify-content: center;
 }
 
 .login-card {
   background-color: #FFFFFF;
-  border: solid;
+  border: solid gray 1px;
   width: 25%;
+  padding: 0.5em;
+  border-radius: 5px;
   justify-content: center;
+  box-shadow: 0 2px 5px 0 gray;
 }
 .login-card .login-input {
   display: block;
@@ -20,6 +25,12 @@ body {
 }
 .login-card a, .login-card .required-label {
   display: block;
+}
+.login-card .login-entry {
+  background-color: #E5E5E5;
+}
+.login-card .login-entry:hover {
+  background-color: #CCCCCC;
 }
 .login-card button, .login-card .login-entry {
   display: block;
@@ -39,12 +50,23 @@ body {
 }
 .login-card .login-buttons {
   margin-bottom: 0.5em;
+  border-radius: 5px;
 }
 .login-card .login-button1 {
   background-color: #0063fb;
   color: white;
 }
+.login-card .login-button1:hover {
+  background-color: #004ABC;
+  box-shadow: 0 2px 5px 0 black;
+}
 .login-card .login-button2 {
   background-color: #FFFFFF;
   color: #0063fb;
+  border: hidden;
+}
+.login-card .login-button2:hover {
+  background-color: #F1F9FF;
+  border: solid 1px gray;
+  box-shadow: 0 2px 5px 0 black;
 }/*# sourceMappingURL=style.css.map */
