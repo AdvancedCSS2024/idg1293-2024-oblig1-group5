@@ -1,0 +1,50 @@
+body {
+  background-color: #F6F8FB;
+}
+
+.login-page {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.login-card {
+  background-color: #FFFFFF;
+  border: solid;
+  width: 25%;
+  justify-content: center;
+}
+.login-card .login-input {
+  display: block;
+  margin: 0 auto;
+  width: 85%;
+}
+.login-card a, .login-card .required-label {
+  display: block;
+}
+.login-card button, .login-card .login-entry {
+  display: block;
+  width: 85%;
+  margin: 0 auto;
+}
+.login-card input {
+  padding: 27px 12px 10px;
+}
+.login-card .login-header {
+  display: flex;
+  justify-content: space-between;
+}
+.login-card .stay-signedin-check {
+  display: flex;
+  justify-content: start;
+}
+.login-card .login-buttons {
+  margin-bottom: 0.5em;
+}
+.login-card .login-button1 {
+  background-color: #0063fb;
+  color: white;
+}
+.login-card .login-button2 {
+  background-color: #FFFFFF;
+  color: #0063fb;
+}/*# sourceMappingURL=style.css.map */

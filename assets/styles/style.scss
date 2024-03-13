@@ -1,16 +1,57 @@
 // USE THIS FILE TO CREATE THE LAYOUT AND SPECIFIC RULES FOR SCREENSHOTS 1 and 2
 
 body{
-    background-color: #FFFFFF;
+    background-color: #F6F8FB;
 }
 
 .login-page{
     display: flex;
     flex-wrap: wrap;
-
+    
 }
 .login-card{
     background-color: #FFFFFF;
-    border: solid 5px;
-    width: 40%;
+    border: solid;
+    width: 25%;
+    justify-content: center;
+    
+ .login-input{
+        display: block;
+        margin: 0 auto;
+        width: 85%;
+      
+    }
+    a, .required-label{
+        display: block;
+    }
+    button, .login-entry{
+        display: block;
+        width:85%;
+        margin: 0 auto;
+    }
+    input{
+        padding: 27px 12px 10px;
+    }
+    .login-header{
+        display: flex;
+        justify-content: space-between;
+    }
+    .stay-signedin-check{
+        display: flex;
+        justify-content: start;
+    }
+    .login-buttons{
+        margin-bottom: 0.5em;
+     
+    }
+    .login-button1{
+        background-color: #0063fb;
+        color: white;
+      } 
+      .login-button2{
+        background-color: #FFFFFF;
+        color: #0063fb;
+      }  
 }
+
+

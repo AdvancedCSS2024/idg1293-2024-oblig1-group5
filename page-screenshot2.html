@@ -4,7 +4,7 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Screenshot 1 page</title>
-  <link rel="stylesheet" href="assets/css/style.min.css">
+  <link rel="stylesheet" href="assets/styles/style.css">
 </head>
 <body>
   <main class="login-page">
@@ -18,25 +18,37 @@
  <div class="login-card">
   <div class="login-header">
     <img src="" alt="Finnlogo">
-    <img src="" alt="Schipsted">
+    <img src="" alt="Shitsted">
     </div>
     <div class="login-main">
-    <h1>Logg inn</h1>
+     <!--The log in input-->
+      <h1>Logg inn</h1>
     <form class="login-input">
-      <input type="text" placeholder="Skriv inn din e-postadresse">
-      <label>* Nødvendig felt</label>
-      <input type="password" placeholder="Vennligst oppgi passordet ditt">
-      <label>* Nødvendig felt</label>
-      
+      <input class="login-entry" type="text" placeholder="Skriv inn din e-postadresse">
+      <label class="required-label">* Nødvendig felt</label>
+      <input class="login-entry" type="password" placeholder="Vennligst oppgi passordet ditt">
+      <label class="required-label">* Nødvendig felt</label>
+  
       <a href="">Glemt Passord?</a>
-      <label>Hold meg innlogget</label>
+      <div  class="stay-signedin-check">
       <input type="checkbox">
-      <button>Logg inn</button>
-      <button>Opprette ny konto</button>
+      <label>Hold meg innlogget</label>
+    </div>
+      <button class="login-buttons login-button1" >Logg inn</button>
+      <button class="login-buttons login-button2">Opprette ny konto</button>
+    
     </form>
     </div>
+    <!-------------------->
   </div>
-  
- </main>
+  </main>
+  <footer class="login-footer">
+    <ul>
+      <li>Hjelp</li>
+      <li>Personvernerklæring</li>
+      <li>Villkår</li>
+      <li>Om Schibsted-konto</li>
+    </ul>
+  </footer>
 </body>
 </html>
