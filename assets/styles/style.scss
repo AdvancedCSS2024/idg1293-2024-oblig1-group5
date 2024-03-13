@@ -1,1 +1,16 @@
 // USE THIS FILE TO CREATE THE LAYOUT AND SPECIFIC RULES FOR SCREENSHOTS 1 and 2
+
+body{
+    background-color: #FFFFFF;
+}
+
+.login-page{
+    display: flex;
+    flex-wrap: wrap;
+
+}
+.login-card{
+    background-color: #FFFFFF;
+    border: solid 5px;
+    width: 40%;
+}
