@@ -45,6 +45,9 @@ body {
   display: flex;
   justify-content: space-between;
 }
+.login-card .login-header img {
+  max-width: 10%;
+}
 .login-card .stay-signedin-check {
   display: flex;
   justify-content: start;
