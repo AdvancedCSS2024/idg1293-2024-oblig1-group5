@@ -1,8 +1,15 @@
 // USE THIS FILE TO CREATE THE LAYOUT AND SPECIFIC RULES FOR SCREENSHOTS 1 and 2
 
+@font-face {
+    font-family: 'finn';
+    src: url(https://assets.finn.no/pkg/@warp-ds/fonts/v1/FINNTypeStrippet-Light.woff2);
+}
+
+
 body{
     background-color: #F6F8FB;
     margin: 200px auto;
+    font-family: finn;
 }
 .login-logo-left{
     width: 36px;
@@ -23,13 +30,17 @@ body{
 }
 .login-card{
     background-color: #FFFFFF;
-    border: solid gray 1px;
+
     width: 400px;
     height: 562px;
     padding: 32px 40px;
-    border-radius: 5px;
+    border-radius: 10px;
     justify-content: center;
-    box-shadow: 0 2px 5px 0 gray;
+    box-shadow: 0 10px 20px 0 gray;
+
+    label{
+        margin-bottom: 1em;
+    }
     
  .login-input{
         display: block;
@@ -81,8 +92,9 @@ body{
 
     }
     .login-button1{
-        background-color: #0063fb;
+        background-color: #2B7EFF;
         color: white;
+        border: hidden;
       } 
       .login-button1:hover{
         background-color: #004ABC;
@@ -107,13 +119,17 @@ body{
     text-align: center;
     max-width: 599px;
     height: 350px;
+    padding: 25px;
     align-self: center;
-    img{
-       margin-top: 2em; 
-    }
 }
 .login-footer{
+    display: flex;
+    justify-content: center;
+    position: relative;
+    left: 325px;
+    margin-top: 1em;
     ul li{
         display: inline;
+        margin-right: 5px;
     }
 }
