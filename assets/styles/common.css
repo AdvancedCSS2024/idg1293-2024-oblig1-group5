@@ -17,7 +17,7 @@
     padding: 0 0.5rem;
     margin-left: 0.5rem; }
     .nav_button svg {
-      color: #767676; }
+      color: #c3ccd9; }
   .nav ul {
     list-style: none; }
   .nav a {
@@ -28,36 +28,39 @@
   .nav svg {
     margin-right: 0.5rem; }
 
-.search-bar {
+#search-bar {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
   align-items: center;
   gap: 2rem; }
-  .search-bar_field {
+  #search-bar_field {
     position: relative;
     flex-grow: 1; }
-  .search-bar_input {
+  #search-bar_input {
     margin: 1rem 0;
     padding: 0.9rem 1rem 0.9rem 0.7rem;
     width: 100%;
     font-size: 1rem;
-    color: #c3ccd9; }
-  .search-bar_button {
+    border: #c3ccd9 solid 1px;
+    border-radius: 4px; }
+    #search-bar_input::placeholder {
+      color: #c3ccd9; }
+  #search-bar_button {
     position: absolute;
     background-color: transparent;
     top: 50%;
     right: 1rem;
     transform: translateY(-50%); }
-    .search-bar_button svg {
-      color: #767676; }
-  .search-bar_map {
+    #search-bar_button svg {
+      color: #c3ccd9; }
+  #search-bar_map {
     display: flex;
     justify-content: center;
     align-items: center; }
-    .search-bar_map svg {
+    #search-bar_map svg {
       margin-right: 0.5rem; }
-    .search-bar_map span {
+    #search-bar_map span {
       font-size: 1.1rem; }
 
 .menu {
@@ -82,7 +85,7 @@
       top: 0;
       right: 0; }
       .menu_item--external svg {
-        color: #767676; }
+        color: #c3ccd9; }
 
 .listing {
   margin: 1rem 0;
@@ -130,7 +133,7 @@
       height: 100%;
       object-fit: cover;
       border-radius: 8px;
-      border: 2px solid #767676; }
+      border: 2px solid #c3ccd9; }
   .listing_button--favorite {
     position: absolute;
     top: 0;
