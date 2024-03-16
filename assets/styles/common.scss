@@ -159,3 +159,292 @@
         }
     }
 }
+
+// finding the colors defined in their design system
+$primary-blue: #0063fb;
+$secondary-blue: #06befb;
+$gray-700: #464646; //Licorice
+$gray-500: #767676; // Stone
+$white: #ffffff;
+$aqua-50: #f1f9ff; // Ice
+$bluegray-100: #c3ccd9; // Marble
+$bluegray-400: #9ba8ba;
+
+.nav {
+  display: flex;
+  flex-flow: row;
+  justify-content: space-between;
+  align-items: center;
+  height: 3rem;
+  width: 100%;
+
+  &_logo {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+
+    &:hover {
+      border-bottom: $primary-blue solid 2.5px;
+    }
+
+    span {
+      display: inline-block;
+    }
+  }
+
+  &_navigation {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+
+    .nav_button {
+      display: inline-block;
+      padding: 0 0.5rem;
+      margin-left: 0.5rem;
+      height: 100%;
+      
+
+      &:hover {
+        border-bottom: $primary-blue solid 2.5px;
+      }
+
+      svg {
+        color: $bluegray-400;
+      }
+    }
+  }
+
+  ul {
+    display: block;
+    list-style: none;
+    height: 100%;
+  }
+
+  a {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: $gray-700;
+    height: 100%;
+  }
+
+  svg {
+    margin-right: 0.5rem;
+  }
+}
+
+#search-bar {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  gap: 2rem;
+
+  &_field {
+    position: relative;
+    flex-grow: 1;
+  }
+
+  &_input {
+    margin: 1rem 0;
+    padding: 0.9rem 1rem 0.9rem 0.7rem;
+    width: 100%;
+    font-size: 1rem;
+    border: $bluegray-100 solid 1px;
+    border-radius: 4px;
+
+    &::placeholder {
+      color: $bluegray-100;
+    }
+
+    &:hover {
+        border-color: $bluegray-400;
+    }
+
+    // checked in the source code how they changed the border color of the input field when in focus
+    &:focus {
+        outline: 2px solid $secondary-blue;
+        outline-offset: -2px;
+    }
+  }
+
+  &_button {
+    position: absolute;
+    background-color: transparent;
+    top: 50%;
+    right: 1rem;
+    transform: translateY(-50%);
+
+    svg {
+      color: $bluegray-100;
+    }
+  }
+
+  &_map {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    &:hover {
+    text-decoration: underline;
+    }
+
+    a {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        color: $gray-700;
+    }
+    
+    svg {
+      margin-right: 0.5rem;
+    }
+
+    span {
+      font-size: 1.1rem;
+    }
+  }
+}
+
+.menu {
+  display: grid;
+  grid-template-columns: repeat(6, 1fr);
+  grid-template-rows: auto auto;
+  margin-bottom: 1rem;
+
+  &_item {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    padding: 1rem 0;
+
+    // targetting 9 first buttons, and setting the color of the parent container of the '.svg' icons so they could access it through "currentColor"
+    &--blue {
+      color: $secondary-blue;
+    }
+
+    span {
+      color: $gray-700;
+      padding: 0.5rem;
+    }
+
+    // using the "share" icon obtained from the "Iconography" section in Foundations
+    &--external {
+      position: absolute;
+      top: 0;
+      right: 0;
+
+      svg {
+        color: $bluegray-100;
+      }
+    }
+  }
+}
+
+.listing {
+  margin: 1rem 0;
+  padding: 0 1rem;
+
+  &_card-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: auto auto;
+  }
+
+  &_header {
+    display: inline-block;
+    margin-bottom: 2rem;
+
+    h1,
+    p {
+      display: inline;
+    }
+
+    a {
+      color: $primary-blue;
+
+      &:hover,
+      &:visited {
+        text-decoration: underline;
+      }
+    }
+  }
+
+  &_card {
+    padding: 0.7rem;
+
+    &:hover {
+    background-color: $aqua-50;
+    }
+  }
+
+  &_image {
+    position: relative;
+    width: 285px;
+    height: 310px;
+
+    &--shadow {
+      position: absolute;
+      bottom: 0;
+      left: 0;
+      width: 100%;
+      height: 15%;
+      z-index: 0;
+      background: linear-gradient(to top, rgba(0, 0, 0, 1), rgba(0, 0, 0, 0));
+      border-radius: 0 0 8px 8px;
+    }
+
+    &--text {
+      display: block;
+      position: absolute;
+      top: 50%;
+      left: 14%;
+      font-weight: bold;
+      color: $white;
+      transform: translate(-50%, -30%);
+      z-index: 1;
+    }
+
+    img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      border-radius: 8px;
+      border: 2px solid $bluegray-100;
+    }
+  }
+
+  &_button--favorite {
+    position: absolute;
+    top: 0;
+    right: 0;
+    border: none;
+    background-color: transparent;
+    padding: 1rem;
+
+    // https://developer.mozilla.org/en-US/docs/Web/CSS/filter-function/drop-shadow
+    svg {
+      filter: drop-shadow(0 0 3px black);
+    }
+  }
+
+  &_info {
+    padding-bottom: 1rem;
+
+    &--place {
+      display: block;
+      padding: 0.5rem 0;
+      color: $gray-500;
+    }
+
+    &--title {
+      font-size: 1.2rem;
+    }
+  }
+}
+
+/*# sourceMappingURL=common.css.map */

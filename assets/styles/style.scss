@@ -15,3 +15,62 @@ body {
     font-family: "finn";
     max-width: 100%;
 }
+
+// reset default margin and padding
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-color: #ffffff;
+}
+
+h1 {
+    margin-right: 0.5rem;
+    font-size: 1.5rem;
+}
+
+a {
+    text-decoration: none;
+}
+
+header {
+    position: fixed; // the original page has a fixed header when scrolling
+    z-index: 1000; // making sure it's above all elements
+    top: 0;
+    border-bottom: 1px solid #c3ccd9;
+    width: 100%;
+    margin-bottom: 1rem;
+}
+
+.page-container {
+padding-top: 4rem;
+}
+
+.center-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    max-width: 1000px;
+    margin: 0 auto;
+    padding: 0 1.5rem;
+}
+
+.main-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    max-width: 100vw;
+}
+
+section {
+    width: 100%;
+    margin-bottom: 1rem;
+}
+
+
+/*# sourceMappingURL=style.css.map */
