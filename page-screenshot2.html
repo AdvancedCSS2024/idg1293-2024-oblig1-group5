@@ -4,8 +4,54 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Screenshot 1 page</title>
+  <link rel="stylesheet" href="assets/css/style.min.css">
 </head>
-<body>
+<body class="">
+  <main class="login-page">
+<div class="login-info">
+  <img src="assets/img/mobil.png" alt="phonepic">
+  <p>Logg inn for å sende meldinger, lagre favoritter og søk. Du får også varsler når det skjer noe nytt!</p>
+  <p>Problemer med innloggingen? <a href="">Her kan du finne hjelp</a></p>
+  <a href="">Tilbake til FINN</a>
+</div>
+
+ <div class="login-card">
+  <div class="login-header">
+    <img src="assets/img/finnlogo.png" class="login-logo-left" alt="Finnlogo">
+    <img src="assets/img/schibstedlogo.png" class="login-logo-right" alt="Shitsted">
+    </div>
+    <div class="login-main">
+     <!--The log in input-->
+      <h1>Logg inn</h1>
+    <form class="login-input">
+      <input class="login-entry" type="text" placeholder="Skriv inn din e-postadresse">
+      <label class="required-label">* Nødvendig felt</label>
+      <input class="login-entry" type="password" placeholder="Vennligst oppgi passordet ditt">
+      <label class="required-label">* Nødvendig felt</label>
   
+      <a href="">Glemt Passord?</a>
+      <div  class="stay-signedin-check">
+      <input type="checkbox">
+      <label>Hold meg innlogget</label>
+       <svg xmlns="http://www.w3.org/2000/svg" class="info-icon" width="25" height="25" fill="blue" viewBox="0 0 32 32"><g clip-path="url(#_Q1FEclip0_963_179)"><path fill="currentColor" fill-rule="evenodd" d="M1.75 16c0 7.87 6.38 14.25 14.25 14.25S30.25 23.87 30.25 16 23.87 1.75 16 1.75 1.75 8.13 1.75 16zM16 31.75C7.302 31.75.25 24.698.25 16S7.302.25 16 .25 31.75 7.302 31.75 16 24.698 31.75 16 31.75zm0-7a.75.75 0 00.75-.75V14a.75.75 0 00-1.5 0v10c0 .414.336.75.75.75zM16 11a1 1 0 110-2 1 1 0 010 2z" clip-rule="evenodd"></path></g><defs><clipPath id="_Q1FEclip0_963_179"><path fill="currentColor" d="M0 0h32v32H0z"></path></clipPath></defs></svg>
+    </div>
+      <!--Svg scraped from finn.no-->
+     
+      <button class="login-buttons login-button1" >Logg på</button>
+      <button class="login-buttons login-button2">Opprette ny konto</button>
+    
+    </form>
+    </div>
+    <!-------------------->
+  </div>
+  </main>
+  <footer class="login-page login-footer">
+    <ul>
+      <li>Hjelp</li>
+      <li>Personvernerklæring</li>
+      <li>Villkår</li>
+      <li>Om Schibsted-konto</li>
+    </ul>
+  </footer>
 </body>
 </html>

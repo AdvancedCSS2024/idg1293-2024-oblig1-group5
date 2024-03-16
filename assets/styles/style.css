@@ -1,0 +1,88 @@
+body {
+  background-color: #F6F8FB;
+  margin: 100px auto;
+}
+
+.login-page {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 50px;
+}
+
+.login-card {
+  background-color: #FFFFFF;
+  border: solid gray 1px;
+  width: 25%;
+  padding: 0.5em;
+  border-radius: 5px;
+  justify-content: center;
+  box-shadow: 0 2px 5px 0 gray;
+}
+.login-card .login-input {
+  display: block;
+  margin: 0 auto;
+  width: 85%;
+}
+.login-card a, .login-card .required-label {
+  display: block;
+}
+.login-card .login-entry {
+  background-color: #E5E5E5;
+}
+.login-card .login-entry:hover {
+  background-color: #CCCCCC;
+}
+.login-card button, .login-card .login-entry {
+  display: block;
+  width: 85%;
+  margin: 0 auto;
+}
+.login-card input {
+  padding: 27px 12px 10px;
+}
+.login-card .login-header {
+  display: flex;
+  justify-content: space-between;
+}
+.login-card .login-header img {
+  max-width: 10%;
+}
+.login-card .stay-signedin-check {
+  display: flex;
+  justify-content: start;
+}
+.login-card .login-buttons {
+  margin-bottom: 0.5em;
+  border-radius: 5px;
+  font-weight: 600;
+  font-size: 17px;
+  line-height: 16px;
+  letter-spacing: 0.25px;
+  min-width: 150px;
+  padding: 16px;
+}
+.login-card .login-button1 {
+  background-color: #0063fb;
+  color: white;
+}
+.login-card .login-button1:hover {
+  background-color: #004ABC;
+  box-shadow: 0 2px 5px 0 black;
+}
+.login-card .login-button2 {
+  background-color: #FFFFFF;
+  color: #0063fb;
+  border: hidden;
+}
+.login-card .login-button2:hover {
+  background-color: #F1F9FF;
+  border: solid 1px gray;
+  box-shadow: 0 2px 5px 0 black;
+}
+
+.login-info {
+  display: block;
+  background-color: #F1F9FF;
+  text-align: center;
+}/*# sourceMappingURL=style.css.map */
