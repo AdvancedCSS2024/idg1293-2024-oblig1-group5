@@ -1,6 +1,164 @@
 // YOU MUST USE BEM HERE
 // IMPLEMENT ALL THE RULES RELATED TO THE COMPONENTS THAT ARE PART OF YOUR DESIGN SYSTEM HERE
-// Example: input, button, card ...
+// Example: input, button, card ..
+
+
+/*The logos in the login card */
+.login-logo-left {
+    width: 36px;
+    height: 18px;
+}
+.login-logo-right {
+    width: 115px;
+    height: 24px;
+}
+/* Gives rules for the main layout of the login page */
+.login-page {
+    margin-top: 200px;
+    display: flex;
+    width: 100%;
+    color: #767676;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 25px;
+}
+
+/* Rules of the login card where the user inputs their login details*/
+.login-card {
+    background-color: #ffffff;
+
+    width: 400px;
+    height: 562px;
+    padding: 32px 40px;
+    border-radius: 10px;
+    justify-content: center;
+    box-shadow: 0 10px 20px 0 gray;
+
+    label {
+        margin-bottom: 1.5em;
+    }
+    // styling for the form of the login card
+    .login-input {
+        display: block;
+        margin: 0 auto;
+        width: 100%;
+        label {
+            font-size: 12px;
+        }
+    }
+    // Headline
+    h1 {
+        color: #464646;
+        font-size: 26px;
+        font-family: finn-bold;
+    }
+    a,
+    .required-label {
+        display: block;
+    }
+    // styling for the field of the input text
+    .login-entry {
+        background-color: #e5e5e5;
+        border: none;
+        border-bottom: solid 0.5px transparent;
+        border-radius: 5px;
+        transition: border-bottom 0.5s ease;
+        padding-bottom: 3px;
+        display: block;
+        width: 100%;
+        margin: 0 auto;
+    }
+    .login-entry:hover {
+        background-color: #cccccc;
+    }
+    .login-entry:focus {
+        border-bottom: solid 5px #2b7eff;
+    }
+    input {
+        padding: 27px 5px;
+    }
+    .login-header {
+        display: flex;
+        justify-content: space-between;
+    }
+    .stay-signedin-check {
+        margin: 2.5em 0;
+
+        input {
+            width: 20px;
+            height: 20px;
+        }
+        label {
+            font-size: 16px;
+        }
+        .info-icon {
+            margin-left: 12em;
+        }
+    }
+}
+
+//generic styling for the login option buttons
+.login-buttons {
+    display: block;
+    width: 100%;
+    margin: 0 auto;
+   
+   
+    margin-bottom: 0.5em;
+    border-radius: 5px;
+    font-weight: 600;
+    font-size: 17px;
+    line-height: 16px;
+    letter-spacing: 0.25px;
+    min-width: 150px;
+    padding: 16px;
+}
+//call to action button
+.login-button1 {
+    background-color: #2b7eff;
+    color: white;
+    border: hidden;
+}
+.login-button1:hover {
+    background-color: #004abc;
+    box-shadow: 0 2px 5px 0 black;
+}
+// secondary button
+.login-button2 {
+    background-color: #ffffff;
+    color: #0063fb;
+    border: hidden;
+}
+.login-button2:hover {
+    background-color: #f1f9ff;
+    border: solid 1px gray;
+    box-shadow: 0 2px 5px 0 black;
+}
+//styling for the info section of the page
+.login-info {
+    display: block;
+    background-color: #f1f9ff;
+    text-align: center;
+    max-width: 599px;
+    height: 350px;
+    padding: 25px;
+    align-self: center;
+}
+// the footer of the login page
+.login-footer {
+    display: flex;
+    justify-content: center;
+    max-width: 100%;
+    margin-top: 1em;
+    ul {
+        position: relative;
+        left: 320px;
+        li {
+            display: inline;
+            margin-right: 5px;
+        }
+    }
+}
 
 // finding the colors defined in their design system
 $primary-blue: #0063fb;
@@ -36,8 +194,8 @@ $bluegray-400: #9ba8ba;
   }
 
   &_navigation {
-    display: flex; /* Use Flexbox */
-    justify-content: center; /* Center items horizontally */
+    display: flex;
+    justify-content: center;
     align-items: center;
     height: 100%;
 
