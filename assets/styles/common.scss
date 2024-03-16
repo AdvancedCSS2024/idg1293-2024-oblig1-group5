@@ -64,18 +64,15 @@
         border-radius: 5px;
         transition: border-bottom 0.5s ease;
         padding-bottom: 3px;
+        display: block;
+        width: 100%;
+        margin: 0 auto;
     }
     .login-entry:hover {
         background-color: #cccccc;
     }
     .login-entry:focus {
         border-bottom: solid 5px #2b7eff;
-    }
-    button,
-    .login-entry {
-        display: block;
-        width: 100%;
-        margin: 0 auto;
     }
     input {
         padding: 27px 5px;
@@ -98,39 +95,44 @@
             margin-left: 12em;
         }
     }
-    //generic styling for the login option buttons
-    .login-buttons {
-        margin-bottom: 0.5em;
-        border-radius: 5px;
-        font-weight: 600;
-        font-size: 17px;
-        line-height: 16px;
-        letter-spacing: 0.25px;
+}
 
-        min-width: 150px;
-        padding: 16px;
-    }
-    //call to action button
-    .login-button1 {
-        background-color: #2b7eff;
-        color: white;
-        border: hidden;
-    }
-    .login-button1:hover {
-        background-color: #004abc;
-        box-shadow: 0 2px 5px 0 black;
-    }
-    // secondary button
-    .login-button2 {
-        background-color: #ffffff;
-        color: #0063fb;
-        border: hidden;
-    }
-    .login-button2:hover {
-        background-color: #f1f9ff;
-        border: solid 1px gray;
-        box-shadow: 0 2px 5px 0 black;
-    }
+//generic styling for the login option buttons
+.login-buttons {
+    display: block;
+    width: 100%;
+    margin: 0 auto;
+   
+   
+    margin-bottom: 0.5em;
+    border-radius: 5px;
+    font-weight: 600;
+    font-size: 17px;
+    line-height: 16px;
+    letter-spacing: 0.25px;
+    min-width: 150px;
+    padding: 16px;
+}
+//call to action button
+.login-button1 {
+    background-color: #2b7eff;
+    color: white;
+    border: hidden;
+}
+.login-button1:hover {
+    background-color: #004abc;
+    box-shadow: 0 2px 5px 0 black;
+}
+// secondary button
+.login-button2 {
+    background-color: #ffffff;
+    color: #0063fb;
+    border: hidden;
+}
+.login-button2:hover {
+    background-color: #f1f9ff;
+    border: solid 1px gray;
+    box-shadow: 0 2px 5px 0 black;
 }
 //styling for the info section of the page
 .login-info {
