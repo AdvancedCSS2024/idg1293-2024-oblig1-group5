@@ -3,28 +3,43 @@
   flex-flow: row;
   justify-content: space-between;
   align-items: center;
-  padding: 0.5rem 0;
+  height: 3rem;
   width: 100%; }
   .nav_logo {
     display: flex;
-    flex-flow: row;
     justify-content: center;
-    align-items: center; }
+    align-items: center;
+    height: 100%; }
+    .nav_logo:hover {
+      border-bottom: #0063fb solid 2.5px; }
     .nav_logo span {
       display: inline-block; }
-  .nav_button {
-    display: inline-block;
-    padding: 0 0.5rem;
-    margin-left: 0.5rem; }
-    .nav_button svg {
-      color: #c3ccd9; }
+  .nav_navigation {
+    display: flex;
+    /* Use Flexbox */
+    justify-content: center;
+    /* Center items horizontally */
+    align-items: center;
+    height: 100%; }
+    .nav_navigation .nav_button {
+      display: inline-block;
+      padding: 0 0.5rem;
+      margin-left: 0.5rem;
+      height: 100%; }
+      .nav_navigation .nav_button:hover {
+        border-bottom: #0063fb solid 2.5px; }
+      .nav_navigation .nav_button svg {
+        color: #9ba8ba; }
   .nav ul {
-    list-style: none; }
+    display: block;
+    list-style: none;
+    height: 100%; }
   .nav a {
     display: flex;
-    flex-direction: row;
+    justify-content: center;
     align-items: center;
-    color: #464646; }
+    color: #464646;
+    height: 100%; }
   .nav svg {
     margin-right: 0.5rem; }
 
@@ -46,6 +61,11 @@
     border-radius: 4px; }
     #search-bar_input::placeholder {
       color: #c3ccd9; }
+    #search-bar_input:hover {
+      border-color: #9ba8ba; }
+    #search-bar_input:focus {
+      outline: 2px solid #06befb;
+      outline-offset: -2px; }
   #search-bar_button {
     position: absolute;
     background-color: transparent;
@@ -58,6 +78,13 @@
     display: flex;
     justify-content: center;
     align-items: center; }
+    #search-bar_map:hover {
+      text-decoration: underline; }
+    #search-bar_map a {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      color: #464646; }
     #search-bar_map svg {
       margin-right: 0.5rem; }
     #search-bar_map span {
@@ -106,6 +133,8 @@
         text-decoration: underline; }
   .listing_card {
     padding: 0.7rem; }
+    .listing_card:hover {
+      background-color: #f1f9ff; }
   .listing_image {
     position: relative;
     width: 285px;
@@ -125,7 +154,7 @@
       top: 50%;
       left: 14%;
       font-weight: bold;
-      color: white;
+      color: #ffffff;
       transform: translate(-50%, -30%);
       z-index: 1; }
     .listing_image img {
@@ -147,7 +176,8 @@
     padding-bottom: 1rem; }
     .listing_info--place {
       display: block;
-      padding: 0.5rem 0; }
+      padding: 0.5rem 0;
+      color: #767676; }
     .listing_info--title {
       font-size: 1.2rem; }
 

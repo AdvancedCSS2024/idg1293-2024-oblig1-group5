@@ -10,45 +10,66 @@ $gray-500: #767676; // Stone
 $white: #ffffff;
 $aqua-50: #f1f9ff; // Ice
 $bluegray-100: #c3ccd9; // Marble
+$bluegray-400: #9ba8ba;
 
 .nav {
   display: flex;
   flex-flow: row;
   justify-content: space-between;
   align-items: center;
-  padding: 0.5rem 0;
+  height: 3rem;
   width: 100%;
 
   &_logo {
     display: flex;
-    flex-flow: row;
     justify-content: center;
     align-items: center;
+    height: 100%;
+
+    &:hover {
+      border-bottom: $primary-blue solid 2.5px;
+    }
 
     span {
       display: inline-block;
     }
   }
 
-  &_button {
-    display: inline-block;
-    padding: 0 0.5rem;
-    margin-left: 0.5rem;
+  &_navigation {
+    display: flex; /* Use Flexbox */
+    justify-content: center; /* Center items horizontally */
+    align-items: center;
+    height: 100%;
 
-    svg {
-      color: $bluegray-100;
+    .nav_button {
+      display: inline-block;
+      padding: 0 0.5rem;
+      margin-left: 0.5rem;
+      height: 100%;
+      
+
+      &:hover {
+        border-bottom: $primary-blue solid 2.5px;
+      }
+
+      svg {
+        color: $bluegray-400;
+      }
     }
   }
 
   ul {
+    display: block;
     list-style: none;
+    height: 100%;
   }
 
   a {
     display: flex;
-    flex-direction: row;
+    justify-content: center;
     align-items: center;
     color: $gray-700;
+    height: 100%;
   }
 
   svg {
@@ -79,6 +100,16 @@ $bluegray-100: #c3ccd9; // Marble
     &::placeholder {
       color: $bluegray-100;
     }
+
+    &:hover {
+        border-color: $bluegray-400;
+    }
+
+    // checked in the source code how they changed the border color of the input field when in focus
+    &:focus {
+        outline: 2px solid $secondary-blue;
+        outline-offset: -2px;
+    }
   }
 
   &_button {
@@ -98,6 +129,17 @@ $bluegray-100: #c3ccd9; // Marble
     justify-content: center;
     align-items: center;
 
+    &:hover {
+    text-decoration: underline;
+    }
+
+    a {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        color: $gray-700;
+    }
+    
     svg {
       margin-right: 0.5rem;
     }
@@ -176,6 +218,10 @@ $bluegray-100: #c3ccd9; // Marble
 
   &_card {
     padding: 0.7rem;
+
+    &:hover {
+    background-color: $aqua-50;
+    }
   }
 
   &_image {
@@ -200,7 +246,7 @@ $bluegray-100: #c3ccd9; // Marble
       top: 50%;
       left: 14%;
       font-weight: bold;
-      color: white;
+      color: $white;
       transform: translate(-50%, -30%);
       z-index: 1;
     }
@@ -234,6 +280,7 @@ $bluegray-100: #c3ccd9; // Marble
     &--place {
       display: block;
       padding: 0.5rem 0;
+      color: $gray-500;
     }
 
     &--title {
