@@ -11,9 +11,12 @@
     src: url(https://assets.finn.no/pkg/@warp-ds/fonts/v1/FINNTypeStrippet-Medium.woff2);
 }
 body {
-    background-color: #f6f8fb;
     font-family: "finn";
     max-width: 100%;
+}
+
+.login-background{
+    background-color: #f6f8fb;
 }
 
 // reset default margin and padding
