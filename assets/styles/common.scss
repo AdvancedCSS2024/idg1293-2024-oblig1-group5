@@ -38,7 +38,7 @@
         margin-bottom: 1.5em;
     }
     // styling for the form of the login card
-    .login-input {
+    .logincard-input {
         display: block;
         margin: 0 auto;
         width: 100%;
@@ -81,7 +81,7 @@
         display: flex;
         justify-content: space-between;
     }
-    .stay-signedin-check {
+    .card--checkbox {
         margin: 2.5em 0;
 
         input {
@@ -91,19 +91,18 @@
         label {
             font-size: 16px;
         }
-        .info-icon {
-            margin-left: 12em;
+        .card-checkbox--info-icon {
+          margin-left: 7em;
         }
     }
 }
 
 //generic styling for the login option buttons
-.login-buttons {
+.logincard-button {
     display: block;
     width: 100%;
     margin: 0 auto;
-   
-   
+  
     margin-bottom: 0.5em;
     border-radius: 5px;
     font-weight: 600;
@@ -114,28 +113,30 @@
     padding: 16px;
 }
 //call to action button
-.login-button1 {
+.login-button--cta {
     background-color: #2b7eff;
     color: white;
-    border: hidden;
-}
-.login-button1:hover {
-    background-color: #004abc;
+    border: none;
+
+    &:hover{
+      background-color: #004abc;
     box-shadow: 0 2px 5px 0 black;
+    }
 }
 // secondary button
-.login-button2 {
+.login-button--secondary {
     background-color: #ffffff;
     color: #0063fb;
-    border: hidden;
-}
-.login-button2:hover {
-    background-color: #f1f9ff;
+    border: none;
+
+    &:hover{
+      background-color: #f1f9ff;
     border: solid 1px gray;
     box-shadow: 0 2px 5px 0 black;
+    }
 }
 //styling for the info section of the page
-.login-info {
+.login-container {
     display: block;
     background-color: #f1f9ff;
     text-align: center;

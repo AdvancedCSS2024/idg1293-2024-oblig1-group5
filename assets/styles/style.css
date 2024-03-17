@@ -34,12 +34,12 @@
 .logincard label {
   margin-bottom: 1.5em;
 }
-.logincard .login-input {
+.logincard .logincard-input {
   display: block;
   margin: 0 auto;
   width: 100%;
 }
-.logincard .login-input label {
+.logincard .logincard-input label {
   font-size: 12px;
 }
 .logincard h1 {
@@ -75,21 +75,21 @@
   display: flex;
   justify-content: space-between;
 }
-.logincard .stay-signedin-check {
+.logincard .card--checkbox {
   margin: 2.5em 0;
 }
-.logincard .stay-signedin-check input {
+.logincard .card--checkbox input {
   width: 20px;
   height: 20px;
 }
-.logincard .stay-signedin-check label {
+.logincard .card--checkbox label {
   font-size: 16px;
 }
-.logincard .stay-signedin-check .info-icon {
-  margin-left: 12em;
+.logincard .card--checkbox .card-checkbox--info-icon {
+  margin-left: 7em;
 }
 
-.login-buttons {
+.logincard-button {
   display: block;
   width: 100%;
   margin: 0 auto;
@@ -103,30 +103,28 @@
   padding: 16px;
 }
 
-.login-button1 {
+.login-button--cta {
   background-color: #2b7eff;
   color: white;
-  border: hidden;
+  border: none;
 }
-
-.login-button1:hover {
+.login-button--cta:hover {
   background-color: #004abc;
   box-shadow: 0 2px 5px 0 black;
 }
 
-.login-button2 {
+.login-button--secondary {
   background-color: #ffffff;
   color: #0063fb;
-  border: hidden;
+  border: none;
 }
-
-.login-button2:hover {
+.login-button--secondary:hover {
   background-color: #f1f9ff;
   border: solid 1px gray;
   box-shadow: 0 2px 5px 0 black;
 }
 
-.login-info {
+.login-container {
   display: block;
   background-color: #f1f9ff;
   text-align: center;
@@ -223,9 +221,6 @@
   font-size: 1rem;
   border: #c3ccd9 solid 1px;
   border-radius: 4px;
-}
-#search-bar_input::-moz-placeholder {
-  color: #c3ccd9;
 }
 #search-bar_input::placeholder {
   color: #c3ccd9;
@@ -355,8 +350,7 @@
 .listing_image img {
   width: 100%;
   height: 100%;
-  -o-object-fit: cover;
-     object-fit: cover;
+  object-fit: cover;
   border-radius: 8px;
   border: 2px solid #c3ccd9;
 }
