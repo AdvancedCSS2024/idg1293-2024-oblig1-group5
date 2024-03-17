@@ -24,7 +24,7 @@
 }
 
 /* Rules of the login card where the user inputs their login details*/
-.login-card {
+.logincard {
     background-color: #ffffff;
 
     width: 400px;
@@ -77,7 +77,7 @@
     input {
         padding: 27px 5px;
     }
-    .login-header {
+    .card--header{
         display: flex;
         justify-content: space-between;
     }
