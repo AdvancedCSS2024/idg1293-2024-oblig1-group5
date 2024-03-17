@@ -57,7 +57,7 @@
         display: block;
     }
     // styling for the field of the input text
-    .login-entry {
+    .logincard-input--entry {
         background-color: #e5e5e5;
         border: none;
         border-bottom: solid 0.5px transparent;
@@ -67,12 +67,9 @@
         display: block;
         width: 100%;
         margin: 0 auto;
-    }
-    .login-entry:hover {
-        background-color: #cccccc;
-    }
-    .login-entry:focus {
-        border-bottom: solid 5px #2b7eff;
+
+        &:hover{background-color: #cccccc;}
+        &:focus{border-bottom: solid 5px #2b7eff;}
     }
     input {
         padding: 27px 5px;

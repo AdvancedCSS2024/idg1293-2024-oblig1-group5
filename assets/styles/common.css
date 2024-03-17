@@ -50,7 +50,7 @@
 .logincard .required-label {
   display: block;
 }
-.logincard .login-entry {
+.logincard .logincard-input--entry {
   background-color: #e5e5e5;
   border: none;
   border-bottom: solid 0.5px transparent;
@@ -61,10 +61,10 @@
   width: 100%;
   margin: 0 auto;
 }
-.logincard .login-entry:hover {
+.logincard .logincard-input--entry:hover {
   background-color: #cccccc;
 }
-.logincard .login-entry:focus {
+.logincard .logincard-input--entry:focus {
   border-bottom: solid 5px #2b7eff;
 }
 .logincard input {
