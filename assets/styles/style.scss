@@ -18,7 +18,16 @@ body {
 .login-background{
     background-color: #f6f8fb;
 }
-
+/* Gives rules for the main layout of the login page */
+.login-page {
+    margin-top: 200px;
+    display: flex;
+    width: 100%;
+    color: #767676;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 25px;
+}
 // reset default margin and padding
 * {
     box-sizing: border-box;
