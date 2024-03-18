@@ -11,11 +11,38 @@
     src: url(https://assets.finn.no/pkg/@warp-ds/fonts/v1/FINNTypeStrippet-Medium.woff2);
 }
 body {
-    background-color: #f6f8fb;
     font-family: "finn";
     max-width: 100%;
 }
 
+.login-background{
+    background-color: #f6f8fb;
+}
+/* Gives rules for the main layout of the login page */
+.login-page {
+    margin-top: 200px;
+    display: flex;
+    width: 100%;
+    color: #767676;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 25px;
+}
+// the footer of the login page
+.login-footer {
+    display: flex;
+    justify-content: center;
+    max-width: 100%;
+    margin-top: 1em;
+    ul {
+        position: relative;
+        left: 320px;
+        li {
+            display: inline;
+            margin-right: 5px;
+        }
+    }
+}
 // reset default margin and padding
 * {
     box-sizing: border-box;
