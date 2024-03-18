@@ -3,6 +3,19 @@
 // Example: input, button, card ..
 
 
+// finding the colors defined in their design system
+$primary-blue: #0063fb;
+$secondary-blue: #06befb;
+$blue-700: #004abc;
+$gray-200: #e5e5e5; 
+$gray-300: #CCCCCC;
+$gray-700: #464646; //Licorice
+$gray-500: #767676; // Stone
+$white: #ffffff; //milk
+$aqua-50: #f1f9ff; // Ice
+$bluegray-100: #c3ccd9; // Marble
+$bluegray-400: #9ba8ba;
+
 /*The logos in the login card */
 .card-header__finn-logo {
     width: 36px;
@@ -18,7 +31,6 @@
 /* Rules of the login card where the user inputs their login details*/
 .logincard {
     background-color: $white;
-
     width: 400px;
     height: 562px;
     padding: 32px 40px;
@@ -137,34 +149,9 @@
     padding: 25px;
     align-self: center;
 }
-// the footer of the login page
-.login-footer {
-    display: flex;
-    justify-content: center;
-    max-width: 100%;
-    margin-top: 1em;
-    ul {
-        position: relative;
-        left: 320px;
-        li {
-            display: inline;
-            margin-right: 5px;
-        }
-    }
-}
 
-// finding the colors defined in their design system
-$primary-blue: #0063fb;
-$secondary-blue: #06befb;
-$blue-700: #004abc;
-$gray-200: #e5e5e5; 
-$gray-300: #CCCCCC;
-$gray-700: #464646; //Licorice
-$gray-500: #767676; // Stone
-$white: #ffffff; //milk
-$aqua-50: #f1f9ff; // Ice
-$bluegray-100: #c3ccd9; // Marble
-$bluegray-400: #9ba8ba;
+
+
 
 .nav {
   display: flex;

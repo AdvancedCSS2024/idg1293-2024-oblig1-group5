@@ -28,6 +28,21 @@ body {
     justify-content: center;
     gap: 25px;
 }
+// the footer of the login page
+.login-footer {
+    display: flex;
+    justify-content: center;
+    max-width: 100%;
+    margin-top: 1em;
+    ul {
+        position: relative;
+        left: 320px;
+        li {
+            display: inline;
+            margin-right: 5px;
+        }
+    }
+}
 // reset default margin and padding
 * {
     box-sizing: border-box;
