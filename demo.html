@@ -9,12 +9,109 @@
 <body>
   <!-- EDIT THIS PAGE TO SHOW HOW YOU USE ALL THE ELEMENTS IMPLEMENTED IN YOUR DESIGN SYSTEM  -->
 
-  <!--The "card" for the login details-->
-  <div class="login-card">
-
-   
+  <!--Menu button with the item--blue modifier-->
+  <a href="#" class="menu__item menu__item--blue">
+    <svg xmlns="http://www.w3.org/2000/svg" width="42" height="28" fill="none" viewBox="0 0 42 28"
+      part="w-icon-real-estate-42-part">
+      <title>Hus med hage</title>
+      <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+        d="M10.714 13.143 23.571 2.857 36.43 13.143m-23.144 12V11.086m0 12.342c0-.946-.768-1.714-1.715-1.714h-.857a3.429 3.429 0 1 0-3.429 3.429h30.858">
+      </path>
+      <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+        d="M33.857 25.143V6.286H30.43v2.057m-4.287 15.943v-5.143a.857.857 0 0 0-.857-.857h-3.429a.857.857 0 0 0-.857.857v5.143m0-11.357v-2.143c0-.592.493-1.072 1.102-1.072h2.939c.608 0 1.102.48 1.102 1.072v2.143c0 .591-.494 1.071-1.102 1.071h-2.939C21.493 14 21 13.52 21 12.93Z">
+      </path>
+    </svg>
+    <span class="menu__label">Eiendom</span>
+  </a>
+  <!-- Menu button withour modifier -->
+  <a class="menu__item">
+    <svg xmlns="http://www.w3.org/2000/svg" width="42" height="28" fill="none" viewBox="0 0 42 28"
+      part="w-icon-honk-light-42-part">
+      <title>Honk lyst ikon</title>
+      <path fill="#570E2D"
+        d="M27.34 2a5.66 5.66 0 1 0 0 11.32 5.66 5.66 0 0 0 0-11.32m0 8.572a2.912 2.912 0 1 1 0-5.823 2.912 2.912 0 0 1 0 5.823m-9.768 4.108v7.33l-5.049-7.33H9V26h2.749v-8.454L17.572 26h2.749V14.68zM29.799 26H33l-4.576-6.553 4.264-4.768H29.58l-5.152 5.991v-5.99H21.68V26h2.75v-2.084l2.197-2.458L29.798 26ZM17.572 2v4.436h-5.823V2H9v11.32h2.749V8.885h5.823v4.437h2.749V2z">
+      </path>
+    </svg>
+    <span class="menu__label">Bilabonnement</span>
+  </a>
+  
+  <!-- Navigation menu button -->
+  <div class="nav">
+  <ul class="nav__menu">
+    <li class="nav__item"><a href="#"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24"
+          fill="none" viewBox="0 0 24 24" part="w-icon-bell-24-part">
+          <title>Bjelle</title>
+          <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5"
+            d="M10.01 21.782a2.11 2.11 0 0 0 1.992 1.467c.905 0 1.725-.605 1.993-1.467M12 3V.75M12 3c4.168 0 7.5 3.492 7.5 7.619C19.5 17.777 21 19 21 19H3s1.5-1.946 1.5-8.381C4.5 6.519 7.865 3 12 3">
+          </path>
+        </svg><span>Varslinger</span></a></li></ul>
+      </div>
+  
+  <!-- Searchbar element -->
+  <div class="search">
+    <div class="search__bar">
+      <label for="search"></label>
+      <input class="search__input"type="text" name="search" id="search" placeholder="Søk etter ski eller smoking">
+      <div class="search__button">
+        <a href=""><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="none"
+            viewBox="0 0 24 24" part="w-icon-search-24-part">
+            <title>Forstørrelsesglass</title>
+            <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5"
+              d="M13.358 18.153a9.063 9.063 0 1 0-7.09-16.682 9.063 9.063 0 0 0 7.09 16.682m2.862-1.933 7.03 7.03">
+            </path>
+          </svg></a>
+      </div>
+    </div>
+      <a href="#" class="search__map"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="none" viewBox="0 0 24 24">
+        <path fill="#818B9A" fill-rule="evenodd"
+          d="M21.551 4.647L15.986 2.42v6.114a.75.75 0 11-1.5 0V2.421L8.764 4.71v13.912l2.582-1.033a.75.75 0 01.557 1.393l-3.24 1.296a1.75 1.75 0 01-1.3 0l-6.221-2.49a1.75 1.75 0 01-1.1-1.624V2.79a1.75 1.75 0 012.4-1.625L7.92 3.357a.25.25 0 00.186 0L14.586.765a1.75 1.75 0 011.3 0l6.222 2.49c.665.265 1.1.908 1.1 1.624v4.379a.75.75 0 01-1.5 0V4.879a.25.25 0 00-.157-.232zM7.264 4.71l-5.38-2.152a.25.25 0 00-.342.232v13.374a.25.25 0 00.157.232l5.565 2.226V4.71zm10.86 7.103a3.583 3.583 0 00-3.582 3.583c0 .42.191 1.042.568 1.807.365.743.863 1.537 1.378 2.272a26.001 26.001 0 001.637 2.098 25.974 25.974 0 001.637-2.099c.515-.734 1.012-1.528 1.378-2.27.377-.766.568-1.388.568-1.808a3.583 3.583 0 00-3.583-3.583zm-5.082 3.583a5.083 5.083 0 0110.166 0c0 .777-.322 1.656-.722 2.47-.412.836-.955 1.698-1.495 2.47-.542.773-1.09 1.47-1.522 1.977a12.44 12.44 0 01-.557.618 3.353 3.353 0 01-.217.206c-.033.027-.08.065-.134.1a.782.782 0 01-.872 0 1.273 1.273 0 01-.134-.1 3.327 3.327 0 01-.217-.206 12.44 12.44 0 01-.557-.618 27.474 27.474 0 01-1.522-1.978c-.54-.771-1.084-1.633-1.495-2.47-.4-.813-.723-1.692-.723-2.469zm6.527 0a1.444 1.444 0 11-2.889 0 1.444 1.444 0 012.89 0z"
+          clip-rule="evenodd"></path>
+      </svg>
+      <span>Kart</span></a>
   </div>
-  <button class="login-buttons login-button1" >First Button</button>
-  <button class="login-buttons login-button2" >Second Button</button>
+
+  <!-- Listing Cards -->
+  <div class="listing__card demopageonly-width">
+    <div class="listing__image">
+      <!-- https://www.finn.no/bap/forsale/ad.html?finnkode=336570044 -->
+      <img src="assets/images/britisk-langhåret.jpg" alt="tre hvite britisk langhåret kattunger">
+      <button class="listing__favorite"><a href=""><svg xmlns="http://www.w3.org/2000/svg" width="22"
+            height="22" fill="black" fill-opacity="0.2" viewBox="0 0 32 32">
+            <title>Heart</title>
+            <path stroke="white" stroke-width="3.5"
+              d="M15.96 29.333c.808 0 1.264-.705 2.566-2.086 1.628-1.727 3.197-3.335 4.336-4.544 3.364-3.568 4.686-4.922 5.625-5.979 2.494-2.807 2.818-6.708 1.126-9.669C27.48 3.322 24.3 2.667 22.59 2.667s-2.934.655-5.094 2.342L16 6.411 14.542 5.01c-2.343-2.003-4.04-2.342-5.13-2.342-.907 0-4.7 0-7.144 4.388-1.783 3.202-.851 7.146 1.42 9.67.407.451 2.084 2.208 4.993 5.371 1.172 1.274 2.83 3.025 4.05 4.355.69.753 2.42 2.882 3.228 2.882z"
+              clip-rule="evenodd"></path>
+          </svg></a></button>
+      <div class="listing__shadow">
+        <span class="listing__price">8 500 kr</span>
+      </div>
+    </div>
+    <div class="listing__info">
+      <span class="listing__place">Etne</span>
+      <h2 class="listing__title">britisk langhåret katt</h2>
+    </div>
+  </div>
+
+      <!-- The Login Card -->
+      <div class="logincard">
+       
+      
+      <!-- Input field -->
+      <input class="logincard__input" type="text" placeholder="skriv inn tekst hær!">
+
+      <!-- Login Checkbox -->      
+      <div class="card__checkbox">
+        <input type="checkbox">
+        <label>Hold meg innlogget</label>
+         <svg xmlns="http://www.w3.org/2000/svg" class="card-checkbox--info-icon" width="25" height="25" fill="blue" viewBox="0 0 32 32"><g clip-path="url(#_Q1FEclip0_963_179)"><path fill="currentColor" fill-rule="evenodd" d="M1.75 16c0 7.87 6.38 14.25 14.25 14.25S30.25 23.87 30.25 16 23.87 1.75 16 1.75 1.75 8.13 1.75 16zM16 31.75C7.302 31.75.25 24.698.25 16S7.302.25 16 .25 31.75 7.302 31.75 16 24.698 31.75 16 31.75zm0-7a.75.75 0 00.75-.75V14a.75.75 0 00-1.5 0v10c0 .414.336.75.75.75zM16 11a1 1 0 110-2 1 1 0 010 2z" clip-rule="evenodd"></path></g><defs><clipPath id="_Q1FEclip0_963_179"><path fill="currentColor" d="M0 0h32v32H0z"></path></clipPath></defs></svg>
+      </div>
+
+      <!-- Login Buttons  -->
+      <button class="logincard__button logincard__button--cta" >Call to action</button>
+      <button class="logincard__button logincard__button--secondary">Second Option</button>
+      <!--Svg scraped from finn.no-->
+      </div>
+
+ 
 </body>
 </html>
