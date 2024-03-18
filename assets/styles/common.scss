@@ -62,7 +62,8 @@ $bluegray-400: #9ba8ba;
     }
    
     input {
-        padding: 27px 5px;
+       padding: 15px 10px;
+    
     }  
 }
 // spacing for the header logos
@@ -81,6 +82,7 @@ $bluegray-400: #9ba8ba;
     display: block;
     width: 100%;
     margin: 0 auto;
+    font-size: 18px;
 
     &:hover{background-color: $gray-300;}
     &:focus{border-bottom: solid 5px $primary-blue;}

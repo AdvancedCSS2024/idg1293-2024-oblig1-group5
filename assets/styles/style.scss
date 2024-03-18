@@ -88,7 +88,9 @@ header {
         padding: 0 1.5rem;
     }
 }
-
+.login-container  a{
+    color: common.$primary-blue;
+}
 .main section {
     margin-bottom: 1rem;
 }
