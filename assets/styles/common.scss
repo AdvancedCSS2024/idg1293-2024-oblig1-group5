@@ -170,6 +170,7 @@ $aqua-50: #f1f9ff; // Ice
 $bluegray-100: #c3ccd9; // Marble
 $bluegray-400: #9ba8ba;
 
+// styling the main navigation bar
 .nav {
   display: flex;
   flex-flow: row;
@@ -178,53 +179,36 @@ $bluegray-400: #9ba8ba;
   height: 3rem;
   width: 100%;
 
-  &_logo {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 100%;
-
+  &__logo {
     &:hover {
       border-bottom: $primary-blue solid 2.5px;
     }
-
-    span {
-      display: inline-block;
-    }
   }
 
-  &_navigation {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 100%;
-
-    .nav_button {
-      display: inline-block;
-      padding: 0 0.5rem;
-      margin-left: 0.5rem;
-      height: 100%;
-      
-
-      &:hover {
-        border-bottom: $primary-blue solid 2.5px;
-      }
-
-      svg {
-        color: $bluegray-400;
-      }
-    }
-  }
-
-  ul {
+  &__menu {
     display: block;
     list-style: none;
     height: 100%;
   }
 
+  .nav__item {
+    display: inline-block;
+    padding: 0 0.5rem;
+    margin-left: 0.5rem;
+    height: 100%;
+    
+
+    &:hover {
+      border-bottom: $primary-blue solid 2.5px;
+    }
+
+    svg {
+      color: $bluegray-400;
+    }
+  }
+
   a {
     display: flex;
-    justify-content: center;
     align-items: center;
     color: $gray-700;
     height: 100%;
@@ -235,19 +219,20 @@ $bluegray-400: #9ba8ba;
   }
 }
 
-#search-bar {
+.search {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
   align-items: center;
   gap: 2rem;
 
-  &_field {
+  &__bar {
     position: relative;
     flex-grow: 1;
   }
 
-  &_input {
+  // styling 'input' and various effects
+  .search__input {
     margin: 1rem 0;
     padding: 0.9rem 1rem 0.9rem 0.7rem;
     width: 100%;
@@ -270,7 +255,7 @@ $bluegray-400: #9ba8ba;
     }
   }
 
-  &_button {
+  &__button {
     position: absolute;
     background-color: transparent;
     top: 50%;
@@ -282,20 +267,13 @@ $bluegray-400: #9ba8ba;
     }
   }
 
-  &_map {
+  &__map {
     display: flex;
     justify-content: center;
     align-items: center;
 
     &:hover {
     text-decoration: underline;
-    }
-
-    a {
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        color: $gray-700;
     }
     
     svg {
@@ -304,6 +282,8 @@ $bluegray-400: #9ba8ba;
 
     span {
       font-size: 1.1rem;
+      color: $gray-700;
+      font-family: finn-bold;
     }
   }
 }
@@ -312,9 +292,9 @@ $bluegray-400: #9ba8ba;
   display: grid;
   grid-template-columns: repeat(6, 1fr);
   grid-template-rows: auto auto;
-  margin-bottom: 1rem;
+  margin-bottom: 2rem;
 
-  &_item {
+  &__item {
     position: relative;
     display: flex;
     flex-direction: column;
@@ -327,11 +307,6 @@ $bluegray-400: #9ba8ba;
       color: $secondary-blue;
     }
 
-    span {
-      color: $gray-700;
-      padding: 0.5rem;
-    }
-
     // using the "share" icon obtained from the "Iconography" section in Foundations
     &--external {
       position: absolute;
@@ -342,6 +317,15 @@ $bluegray-400: #9ba8ba;
         color: $bluegray-100;
       }
     }
+
+    &:hover {
+      color: $gray-500;
+    }
+  }
+
+  &__label {
+    color: $gray-700;
+    padding: 0.5rem;
   }
 }
 
@@ -349,19 +333,19 @@ $bluegray-400: #9ba8ba;
   margin: 1rem 0;
   padding: 0 1rem;
 
-  &_card-grid {
+  &__grid {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     grid-template-rows: auto auto;
   }
 
-  &_header {
+  &__header {
     display: inline-block;
     margin-bottom: 2rem;
 
     h1,
     p {
-      display: inline;
+      display: inline-block;
     }
 
     a {
@@ -374,7 +358,7 @@ $bluegray-400: #9ba8ba;
     }
   }
 
-  &_card {
+  &__card {
     padding: 0.7rem;
 
     &:hover {
@@ -382,32 +366,10 @@ $bluegray-400: #9ba8ba;
     }
   }
 
-  &_image {
+  &__image {
     position: relative;
     width: 285px;
     height: 310px;
-
-    &--shadow {
-      position: absolute;
-      bottom: 0;
-      left: 0;
-      width: 100%;
-      height: 15%;
-      z-index: 0;
-      background: linear-gradient(to top, rgba(0, 0, 0, 1), rgba(0, 0, 0, 0));
-      border-radius: 0 0 8px 8px;
-    }
-
-    &--text {
-      display: block;
-      position: absolute;
-      top: 50%;
-      left: 14%;
-      font-weight: bold;
-      color: $white;
-      transform: translate(-50%, -30%);
-      z-index: 1;
-    }
 
     img {
       width: 100%;
@@ -418,32 +380,61 @@ $bluegray-400: #9ba8ba;
     }
   }
 
-  &_button--favorite {
+  &__shadow {
     position: absolute;
-    top: 0;
-    right: 0;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 15%;
+    z-index: 0;
+    background: linear-gradient(to top, rgba(0, 0, 0, 1), rgba(0, 0, 0, 0));
+    border-radius: 0 0 8px 8px;
+  }
+
+  &__price {
+    display: block;
+    position: absolute;
+    top: 50%;
+    left: 14%;
+    font-weight: bold;
+    color: $white;
+    transform: translate(-50%, -30%);
+    z-index: 1;
+  }
+
+  &__favorite {
+    position: absolute;
+    top: 2%;
+    right: 2%;
     border: none;
     background-color: transparent;
-    padding: 1rem;
+    padding: 0.7rem;
 
     // https://developer.mozilla.org/en-US/docs/Web/CSS/filter-function/drop-shadow
     svg {
+      display: flex;
+      align-items: center;
       filter: drop-shadow(0 0 3px black);
+    }
+
+    &:hover {
+      background-color: rgba(#9ba8ba, 0.6);
+      border-radius: 50%;
     }
   }
 
-  &_info {
+  &__info {
     padding-bottom: 1rem;
+  }
 
-    &--place {
-      display: block;
-      padding: 0.5rem 0;
-      color: $gray-500;
-    }
+  &__place {
+    display: block;
+    padding: 0.5rem 0;
+    color: $gray-500;
+  }
 
-    &--title {
-      font-size: 1.2rem;
-    }
+  &__title {
+    font-size: 1.2rem;
   }
 }
 
