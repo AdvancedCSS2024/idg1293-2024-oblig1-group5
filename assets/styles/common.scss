@@ -17,7 +17,7 @@
 
 /* Rules of the login card where the user inputs their login details*/
 .logincard {
-    background-color: #ffffff;
+    background-color: $white;
 
     width: 400px;
     height: 562px;
@@ -29,7 +29,7 @@
     label {
         margin-bottom: 1.5em;
     }
-    // styling for the form of the login card
+    // styling for the forms inside the login card
     .logincard__form {
         display: block;
         margin: 0 auto;
@@ -40,7 +40,7 @@
     }
     // Headline
     h1 {
-        color: #464646;
+        color: $gray-700;
         font-size: 26px;
         font-family: finn-bold;
     }
@@ -48,19 +48,19 @@
     .required-label {
         display: block;
     }
-    // styling for the field of the input text
    
     input {
         padding: 27px 5px;
-    }
-    .card__header{
-        display: flex;
-        justify-content: space-between;
-    }
-   
+    }  
 }
+// spacing for the header logos
+.card__header{
+    display: flex;
+    justify-content: space-between;
+}
+ // styling for the field of the input text
 .logincard__input {
-    background-color: #e5e5e5;
+    background-color: $gray-200;
     border: none;
     border-bottom: solid 0.5px transparent;
     border-radius: 5px;
@@ -70,9 +70,10 @@
     width: 100%;
     margin: 0 auto;
 
-    &:hover{background-color: #cccccc;}
-    &:focus{border-bottom: solid 5px #2b7eff;}
+    &:hover{background-color: $gray-300;}
+    &:focus{border-bottom: solid 5px $primary-blue;}
 }
+// Stiling for the card checkbox element
 .card__checkbox {
     margin: 2.5em 0;
 
@@ -105,23 +106,23 @@
 }
 //call to action button
 .logincard__button--cta {
-    background-color: #2b7eff;
+    background-color: $primary-blue;
     color: white;
     border: none;
 
     &:hover{
-      background-color: #004abc;
+      background-color: $blue-700;
     box-shadow: 0 2px 5px 0 black;
     }
 }
 // secondary button
 .logincard__button--secondary {
     background-color: #ffffff;
-    color: #0063fb;
+    color: $primary-blue;
     border: none;
 
     &:hover{
-      background-color: #f1f9ff;
+      background-color:$aqua-50 ;
     border: solid 1px gray;
     box-shadow: 0 2px 5px 0 black;
     }
@@ -129,7 +130,7 @@
 //styling for the info section of the page
 .login-container {
     display: block;
-    background-color: #f1f9ff;
+    background-color: $aqua-50;
     text-align: center;
     max-width: 599px;
     height: 350px;
@@ -155,9 +156,12 @@
 // finding the colors defined in their design system
 $primary-blue: #0063fb;
 $secondary-blue: #06befb;
+$blue-700: #004abc;
+$gray-200: #e5e5e5; 
+$gray-300: #CCCCCC;
 $gray-700: #464646; //Licorice
 $gray-500: #767676; // Stone
-$white: #ffffff;
+$white: #ffffff; //milk
 $aqua-50: #f1f9ff; // Ice
 $bluegray-100: #c3ccd9; // Marble
 $bluegray-400: #9ba8ba;
