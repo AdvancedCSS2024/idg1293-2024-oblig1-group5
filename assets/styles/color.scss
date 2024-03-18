@@ -1,0 +1,14 @@
+// we made a sepearte .css file to store color variables, which we can access by using '@use'
+
+// finding the colors defined in their design system
+$primary-blue: #0063fb;
+$secondary-blue: #06befb;
+$white: #ffffff; //Milk
+$gray-200: #e5e5e5; 
+$gray-300: #cccccc;
+$gray-700: #464646; //Licorice
+$gray-500: #767676; // Stone
+$aqua-50: #f1f9ff; // Ice
+$bluegray-100: #c3ccd9; // Marble
+$bluegray-400: #9ba8ba;
+$blue-700: #004abc;
