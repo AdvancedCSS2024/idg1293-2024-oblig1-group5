@@ -61,10 +61,12 @@ h1 {
 
 a {
     text-decoration: none;
+    color: grey;
 }
 
 header {
     position: fixed; // the original page has a fixed header when scrolling
+    background-color: #ffffff;
     z-index: 1000; // making sure it's above all elements
     top: 0;
     border-bottom: 1px solid #c3ccd9;
@@ -72,30 +74,22 @@ header {
     margin-bottom: 1rem;
 }
 
-.page-container {
-padding-top: 4rem;
-}
-
-.center-container {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    max-width: 1000px;
-    margin: 0 auto;
-    padding: 0 1.5rem;
-}
-
-.main-container {
+.main {
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
     max-width: 100vw;
+    padding-top: 4rem;
+
+    .center {
+        max-width: 1000px;
+        margin: 0 auto;
+        padding: 0 1.5rem;
+    }
 }
 
-section {
-    width: 100%;
+.main section {
     margin-bottom: 1rem;
 }
 
