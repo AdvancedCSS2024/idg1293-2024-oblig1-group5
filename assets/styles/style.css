@@ -451,6 +451,10 @@ header {
   color: #0063fb;
 }
 
+.login-container a:hover {
+  text-decoration: underline;
+}
+
 .card__hlink {
   text-decoration: underline;
 }

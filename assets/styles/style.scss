@@ -91,6 +91,13 @@ header {
 .login-container  a, .card__hlink{
     color: common.$primary-blue;
 }
+.login-container{
+    a{
+        &:hover{
+            text-decoration: underline;
+        }
+    }
+}
 .card__hlink{
     text-decoration: underline;
 }
