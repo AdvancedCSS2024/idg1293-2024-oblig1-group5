@@ -356,7 +356,9 @@ $blue-700: #004abc;
     &:hover{background-color: $gray-300;}
     &:focus{border-bottom: solid 5px $primary-blue;}
 }
-
+.required-label{ 
+    margin-bottom: 1.5em;
+}
 // positioning for the card checkbox element
 .login-card__checkbox {
   display: flex;
