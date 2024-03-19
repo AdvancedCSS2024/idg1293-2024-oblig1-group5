@@ -88,8 +88,11 @@ header {
         padding: 0 1.5rem;
     }
 }
-.login-container  a{
+.login-container  a, .card__hlink{
     color: common.$primary-blue;
+}
+.card__hlink{
+    text-decoration: underline;
 }
 .main section {
     margin-bottom: 1rem;

@@ -138,8 +138,8 @@ $bluegray-400: #9ba8ba;
 
     &:hover{
       background-color:$aqua-50 ;
-    border: solid 1px gray;
-    box-shadow: 0 2px 5px 0 black;
+    border: solid 1px $gray-200;
+    box-shadow: 0 1px 2px 0 black;
     }
 }
 //styling for the info section of the page
